@@ -1,45 +1,101 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background: #6200ea;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0.5rem 0;
-  }
-  
-  header a {
-    color: #bbdefb;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin-left: 20px;
+    font-size: 2.5em;
+    display: inline-block;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
     text-decoration: none;
-  }
-  
-  section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dashboard-section {
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  section h2 {
-    color: #6200ea;
-  }
-  
-  footer {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.project-card {
+    background-color: #fafafa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 1.4em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    background: #eee;
-  }
-  
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
